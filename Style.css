@@ -14,8 +14,8 @@
 
 
 .Kakashi-sensei{
-width: 100px;
-height: 100px;
+width: 130px;
+height: 136px;
 
 
 }
@@ -107,8 +107,11 @@ body{
 
 
 video{
-
-    width: 100vw;
+ min-height: 100%;
+ min-width: 100%;
+ position: fixed;
+ top: 0;
+   
 }
 
 
@@ -129,3 +132,64 @@ top: 0;
    bottom: 20px;
 
 }
+
+
+.formulario-conosco{
+    background-color:transparent;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 40%;
+    left: 40%;
+    padding: 10px 10px ;
+    border: 2px solid rgba(165, 53, 9, 0.7);
+    backdrop-filter: blur 20px;
+    box-shadow: 0 0 10px rgba( 0, 0, 0, 2);
+    gap: 20px;
+
+
+}
+
+
+
+input {
+    height: 30px;
+    border-radius: 5px;
+    border: 3px solid rgb(248, 162, 2);
+    padding-left: 7px;
+    outline-color: blue;
+
+}
+
+
+textarea{
+    width: 270px;
+    height: 100px;
+    border-radius: 5px;
+    border: 3px solid rgb(248, 162, 2);
+    padding-left: 7px;
+    outline-color: blue;
+
+}
+
+.texte-Button{
+    padding: 5px;
+    margin-left: 50px;
+
+}
+
+
+
+
+.Maskara-fundo  {
+      position: fixed;
+      top: 0;
+      width: 100vw;
+      height: 100vh;
+      background: linear-gradient(109deg, rgba(10, 12, 16, 0.99)15%, rgba(10, 12, 16, 0.7)50%,rgba(10, 12, 16, 0.99)85%);
+}
+
+
+left: 36%;
+transform: translate(-50%); top: 40%;
