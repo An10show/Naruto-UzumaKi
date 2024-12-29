@@ -1,10 +1,10 @@
-*{
+* {
     padding: 0;
     box-sizing: border-box;
     margin: 0;
 }
 
-.titulo{
+.titulo {
     display: flex;
     align-items: center;
     margin: 30px;
@@ -13,46 +13,47 @@
 }
 
 
-.Kakashi-sensei{
-width: 130px;
-height: 136px;
+.Kakashi-sensei {
+    width: 130px;
+    height: 136px;
 
 
 }
 
 
-a{
+a {
     color: #ffff;
     align-items: center;
     cursor: pointer;
     align-items: center;
     justify-content: space-between;
     padding: 70px;
+    text-decoration: none;
 
 }
 
-.titulo a:hover{
+.titulo a:hover {
     color: red;
     font-size: 50px;
     transition: 1s color ease-in-out;
 }
 
 
-.Familha{
+.Familha {
     width: 324px;
     height: 277px;
 }
 
 
-p{
-    color:#fff;
+p {
+    color: #fff;
     font-size: 23px;
     margin-top: 25px;
 
 }
 
 
-button{
+button {
     color: rgb(224, 154, 22);
     background-color: rgb(35, 14, 223);
     border-radius: 5px;
@@ -67,24 +68,25 @@ button{
 }
 
 
-button :hover{
-background-color: #4caf50;
-transform: scale(1.05);
+button :hover {
+    background-color: rgb(204, 0, 0);
+    transition: 1s color ease-in-out;
+    transform: scale(1.05);
 }
 
 
-.Sakura{
+.Sakura {
     width: 800px;
 }
 
-body{
-  
+body {
+
     height: 100vh;
-   
+
 }
 
 
-.BODY-Classe{
+.BODY-Classe {
     display: flex;
     height: 100vh;
     align-items: center;
@@ -93,61 +95,61 @@ body{
 }
 
 
-.caixa-Principal{
+.caixa-Principal {
     width: 50%;
-   
+
 }
 
 
-.Video-Folha{
+.Video-Folha {
     position: fixed;
     z-index: -1;
     top: 0;
 }
 
 
-video{
- min-height: 100%;
- min-width: 100%;
- position: fixed;
- top: 0;
-   
-}
-
-
-.Mascara{
-width: 100%;
-height: 100%;
-background:linear-gradient(109deg, rgba(10, 12, 16, 0.99)15%, rgba(10, 12, 16, 0.7)50%,rgba(10, 12, 16, 0.99)85%);
-position: fixed;
-top: 0;
+video {
+    min-height: 100%;
+    min-width: 100%;
+    position: fixed;
+    top: 0;
 
 }
 
-.contato{
+
+.Mascara {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99)15%, rgba(10, 12, 16, 0.7)50%, rgba(10, 12, 16, 0.99)85%);
+    position: fixed;
+    top: 0;
+
+}
+
+.contato {
     width: 30px;
     height: 30px;
-   position: fixed;
-   right: 20px;
-   bottom: 20px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
 
 }
 
 
-.formulario-conosco{
-    background-color:transparent;
+.formulario-conosco {
+    background-color: transparent;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     position: fixed;
     top: 40%;
-    left: 40%;
-    padding: 10px 10px ;
+    left: -290px;
+    padding: 10px 10px;
     border: 2px solid rgba(165, 53, 9, 0.7);
     backdrop-filter: blur 20px;
-    box-shadow: 0 0 10px rgba( 0, 0, 0, 2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 2);
     gap: 20px;
-
+    transition: left 1.5s ease-in-out;
 
 }
 
@@ -163,7 +165,7 @@ input {
 }
 
 
-textarea{
+textarea {
     width: 270px;
     height: 100px;
     border-radius: 5px;
@@ -173,7 +175,7 @@ textarea{
 
 }
 
-.texte-Button{
+.texte-Button {
     padding: 5px;
     margin-left: 50px;
 
@@ -182,14 +184,169 @@ textarea{
 
 
 
-.Maskara-fundo  {
-      position: fixed;
-      top: 0;
-      width: 100vw;
-      height: 100vh;
-      background: linear-gradient(109deg, rgba(10, 12, 16, 0.99)15%, rgba(10, 12, 16, 0.7)50%,rgba(10, 12, 16, 0.99)85%);
+.Maskara-fundo {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99)15%, rgba(10, 12, 16, 0.7)50%, rgba(10, 12, 16, 0.99)85%);
+    transition: visibility 1.8s ease-in-out;
 }
 
 
-left: 36%;
-transform: translate(-50%); top: 40%;
+@media (max-width:1350px ){
+
+    .titulo{
+  padding-left: none;
+  gap: none;
+  width: 80vw;
+    height: auto;
+  
+    }
+
+    .titulo a:hover{
+        color: blue;
+        font-size: 30px;
+        transition: 1s color ease-in-out;
+    }
+
+  
+    .BODY-Classe{
+        flex-direction: column;
+        padding: 10px;
+
+    }
+
+.caixa-Principal{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Sakura{
+    width: 80vw;
+    height: auto;
+}
+
+   
+    button{
+        background-color: green;
+        color: black;
+    }
+    .Familha{
+        display: none;
+    }
+}
+
+@media(max-width:1280px){
+
+    p{
+        display: none;
+    }
+
+    .Kakashi-sensei{
+        display: none;
+    }
+
+    .BODY-Classe{
+        flex-direction: column;
+        padding: 10px;
+
+    }
+
+    a{
+     color: #ffff;
+    align-items: center;
+    cursor: pointer;
+    align-items: center;
+    padding: 40px;
+    }
+
+    .caixa-Principal{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .Sakura{
+        width: 80vw;
+        height: auto;
+    }
+
+    .titulo {
+        display: flex;
+        align-items: center;
+        margin: 30px 0px 0px 60px;
+        gap: none;
+        width: 80vw;
+        height: auto;
+        font-size: 25px;
+    }
+
+
+    
+
+    .BODY-Classe{
+     display: flex;
+     flex-direction: column-reverse;
+    }
+} 
+
+@media(max-width:1100px){
+    
+    .BODY-Classe{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-direction: column-reverse;
+        padding: 10px;
+
+    }
+
+
+    .caixa-Principal{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+.Sakura{
+    width: 80vw;
+    height: auto;
+}
+
+div.titulo{
+    font-size: 30px;
+    padding-left: none;
+    margin: 0px;
+    margin-top: 50px;
+    margin-inline: -15px;
+    
+}
+
+}
+
+
+@media (max-width:912px){
+
+    div.titulo{
+        align-items: center;
+        justify-content: flex-start;
+        margin: 5px;
+        padding: 15px;
+
+    }
+
+    .BODY-Classe{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+        padding: 10px;
+
+    }
+
+}
