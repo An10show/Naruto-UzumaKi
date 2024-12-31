@@ -350,3 +350,37 @@ div.titulo{
     }
 
 }
+
+
+
+@media(max-width: 414px){
+
+button.superação{
+    align-items: center;
+    padding: 26px;
+    display: flex;
+    background-color: red;
+    font-size: 16px;
+}
+
+div.BODY-Classe{
+        align-items: center;
+        display: flex;
+        flex-direction: column-reverse;
+        margin-left: 300px;
+    }
+
+   .Sakura{
+    width: 130vh;
+    height: auto;
+    margin-left: 150px;
+    margin-top: 180px;
+    }
+    
+
+}
+
+
+
+
+
